@@ -1,0 +1,125 @@
+.linkWrapper {
+    margin-bottom: 40px;
+}
+
+.link {
+    text-decoration: none;
+    color: deeppink;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.label {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.labelText {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    outline: none;
+    border-bottom: 2px solid darkred;
+    transition: .25s;
+}
+
+.input:hover,
+.input:active,
+.input:focus {
+    border-bottom-color: deeppink;
+}
+
+.form {
+    margin-bottom: 40px;
+}
+
+.formBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchTypes {
+    display: flex;
+    align-items: center;
+}
+
+.searchText {
+    margin-right: 15px;
+    color: #fff;
+}
+
+.button {
+    margin-right: 10px;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    border: 0;
+    background-color: darkgray;
+    letter-spacing: 1px;
+    transition: .25s;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:last-of-type {
+    margin-right: 0;
+}
+
+.button:hover {
+    background-color: darkred;
+}
+
+.button:active {
+    background-color: deeppink;
+}
+
+.button.active,
+.buttonSearch.active {
+    background-color: deeppink;
+}
+
+.buttonSearch {
+    padding: 10px 60px;
+}
+
+@media (max-width: 610px) {
+    .formBottom {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .searchTypes {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 460px) {
+    .button {
+        padding: 10px 10px;
+    }
+
+    .buttonSearch {
+        padding: 10px 30px;
+    }
+}

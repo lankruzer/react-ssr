@@ -1,0 +1,21 @@
+.footer {
+    margin-top: auto;
+    margin-bottom: 0;
+    padding: 20px 0;
+    background-color: rgba(5, 0, 10, .5);
+}
+
+.linkWrapper {
+    margin-bottom: 40px;
+}
+
+.link {
+    text-decoration: none;
+    color: deeppink;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

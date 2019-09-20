@@ -1,0 +1,38 @@
+.bottom {
+    padding: 10px 0;
+    box-sizing: border-box;
+    background-color: lightgrey;
+    font-weight: 700;
+    min-height: 42px;
+}
+
+.bottomWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sortText {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.sortLink {
+    display: inline-block;
+    margin-right: 15px;
+    transition: .25s;
+    cursor: pointer;
+}
+
+.sortLink:last-of-type {
+    margin-right: 0;
+}
+
+.sortLink:hover {
+    color: darkred;
+    text-decoration: none;
+}
+
+.sortLink.active {
+    color: deeppink;
+}

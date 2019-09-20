@@ -1,0 +1,8 @@
+/node_modules/*
+/bower_components/*
+
+# Ignore built files except build/index.js
+dist/*
+.idea/*
+.env.development
+.env.production

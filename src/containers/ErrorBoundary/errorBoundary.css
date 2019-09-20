@@ -1,0 +1,11 @@
+.errorWrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.errorTitle {
+    margin: 0 auto;
+    max-width: 600px
+}

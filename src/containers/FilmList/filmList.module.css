@@ -1,0 +1,99 @@
+.filmsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    margin: 0 -10px;
+}
+
+.film {
+    width: calc(100% /3);
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin-bottom: 40px;
+}
+
+.stub {
+    margin: auto;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.buttonWrapper {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.button {
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    border: 0;
+    background-color: darkgray;
+    letter-spacing: 1px;
+    transition: .25s;
+    cursor: pointer;
+    outline: none;
+}
+
+.button::before {
+    position: absolute;
+    top: 50%;
+    right: 7px;
+    width: 13px;
+    height: 13px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    transform: translateY(-50%);
+    border-bottom: 0;
+    border-left: 0;
+    transition-property: rotate;
+    animation: rotation linear infinite 1s;
+}
+
+.button.loading::before {
+    content: '';
+}
+
+
+.button:hover,
+.button:active {
+    background-color: deeppink;
+}
+
+@keyframes rotation {
+    from {
+        transform: translateY(-50%) rotate(0);
+    }
+    to {
+        transform: translateY(-50%) rotate(360deg);
+    }
+
+}
+
+@media (max-width: 991px) {
+    .film {
+        width: calc(100% / 2);
+    }
+}
+
+
+@media (max-width: 560px) {
+    .filmsWrapper {
+        padding-top: 40px;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+    }
+
+    .buttonWrapper {
+        margin-bottom: 40px;
+    }
+
+    .film {
+        width: 100%;
+    }
+}
